@@ -10,6 +10,10 @@
 
      <h4><%= link_to 'Show', article_path(article) %></h4>
      <h4><%= link_to 'Edit', edit_article_path(article) %></h4>
+     <h4><%= link_to 'Destroy', article_path(article),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+    </h4>
     </div>
 <%end%>
 
